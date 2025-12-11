@@ -1,0 +1,15 @@
+{
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.biome": "explicit",
+        "source.organizeImports.biome": "explicit"
+    },
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "tailwindCSS.classAttributes": ["class", "className", "headerClassName"],
+    "workbench.activityBar.location": "default",
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "readme"
+}

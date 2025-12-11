@@ -1,0 +1,10 @@
+echo "🔍 Check for ts linting errors"
+pnpm format-and-lint:fix
+if [ $? -ne 0 ]; then
+  echo "❌ TS Linting failed! Push aborted."
+  exit 1
+fi
+
+rm -f tsconfig.tsbuildinfo
+
+echo "✅ TS Linting Passed! Proceeding with commit..."
