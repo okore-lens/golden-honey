@@ -23,13 +23,14 @@ export default function HeroSection({ onJoinClick }: HeroSectionProps) {
                 </h1>
 
                 <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Golden Honey buys, processes, and supplies premium honey
-                    across Kenya. Direct from farmers to your table.
+                    We buy premium honey directly from farmers and supply pure
+                    honey to homes and businesses across Kenya.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
                     <Button
                         size="lg"
+                        onClick={onJoinClick}
                         className="bg-golden-primary hover:bg-golden-dark text-background transition-all duration-300 rounded-full"
                     >
                         Buy Honey
@@ -40,7 +41,7 @@ export default function HeroSection({ onJoinClick }: HeroSectionProps) {
                         className="border-golden-primary text-golden-primary hover:bg-golden-light/10 rounded-full transition-all duration-300 bg-transparent"
                         onClick={onJoinClick}
                     >
-                        Join Waiting List
+                        Get In Touch
                     </Button>
                 </div>
             </div>

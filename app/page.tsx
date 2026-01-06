@@ -8,9 +8,9 @@ import AboutSection from "@/components/about-section";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import HighlightsSection from "@/components/highlights-section";
+import InquirySection from "@/components/inquiry-section";
 import ProductsSection from "@/components/products-section";
 import QualitySection from "@/components/quality-section";
-import WaitlistSection from "@/components/waitlist-section";
 
 const sections = [
     { id: "hero", label: "Home" },
@@ -18,7 +18,7 @@ const sections = [
     { id: "about", label: "About" },
     { id: "products", label: "Products" },
     { id: "quality", label: "Quality" },
-    { id: "waitlist", label: "Join Us" },
+    { id: "inquiry", label: "Contact" },
 ];
 
 export default function Page() {
@@ -136,10 +136,10 @@ export default function Page() {
 
                 <div
                     ref={(el) => {
-                        if (el) sectionRefs.current.waitlist = el;
+                        if (el) sectionRefs.current.inquiry = el;
                     }}
                 >
-                    <WaitlistSection />
+                    <InquirySection />
                 </div>
             </main>
 
