@@ -24,7 +24,7 @@ export default function ProductsSection() {
                     {products.map((product) => (
                         <div
                             key={product.name}
-                            className="group p-8 rounded-2xl bg-white border border-golden-light/20 hover:border-golden-primary/40 hover:shadow-lg transition-all duration-300 text-center cursor-pointer"
+                            className="group p-8 rounded-2xl bg-white border border-primary hover:border-golden-primary/40 hover:shadow-lg transition-all duration-300 text-center cursor-pointer"
                         >
                             <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
                                 {product.icon}

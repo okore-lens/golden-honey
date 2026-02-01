@@ -1,4 +1,5 @@
-import { Droplet } from "lucide-react";
+import Image from "next/image";
+import {Icon} from "@iconify/react"
 
 export default function Footer() {
     return (
@@ -8,9 +9,8 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-2">
-                            <Droplet className="w-5 h-5 text-golden-primary fill-golden-primary" />
-                            <span className="font-serif font-bold text-foreground">
-                                Golden Honey
+                            <Image src={`./logo.svg`} alt={"logo" } width={200} height={100}/>                            <span className="font-serif font-bold text-foreground">
+                              
                             </span>
                         </div>
                         <p className="text-sm text-muted-foreground">
@@ -106,6 +106,11 @@ export default function Footer() {
                                 >
                                     +254 741 844 437
                                 </a>
+                            </li>
+                            <li className="flex gap-4">
+                                <Icon icon="logos:facebook"  fontSize={25}/>
+                                <Icon icon="skill-icons:instagram" fontSize={25}/>
+                                <Icon icon="devicon:twitter" fontSize={22}/>
                             </li>
                         </ul>
                     </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
 import type React from "react";
-import "./globals.css";
+import "./global.css";
 
 import WhatsappChat from "@/components/whatsapp-chat";
 

@@ -2,7 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import AboutSection from "@/components/about-section";
 import Footer from "@/components/footer";
@@ -11,6 +11,8 @@ import HighlightsSection from "@/components/highlights-section";
 import InquirySection from "@/components/inquiry-section";
 import ProductsSection from "@/components/products-section";
 import QualitySection from "@/components/quality-section";
+import FlyingBees from "@/components/flying-bees";
+import CursorBees from "@/components/cursor-bees";
 
 const sections = [
     { id: "hero", label: "Home" },
@@ -29,6 +31,17 @@ export default function Page() {
         sectionRefs.current[id]?.scrollIntoView({ behavior: "smooth" });
         setMobileMenuOpen(false);
     };
+      const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
     return (
         <div className="bg-background text-foreground overflow-hidden">
@@ -50,7 +63,7 @@ export default function Page() {
                                     type="button"
                                     key={section.id}
                                     onClick={() => scrollToSection(section.id)}
-                                    className="text-sm text-muted-foreground hover:text-golden-primary transition-colors duration-300 relative group"
+                                    className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
                                 >
                                     {section.label}
                                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-golden-primary group-hover:w-full transition-all duration-300"></span>
@@ -92,6 +105,8 @@ export default function Page() {
 
             {/* Main Content */}
             <main className="pt-16">
+                  <FlyingBees />
+      {!isMobile && <CursorBees />}
                 <div
                     ref={(el) => {
                         if (el) sectionRefs.current.hero = el;
