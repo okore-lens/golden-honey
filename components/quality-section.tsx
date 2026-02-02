@@ -24,7 +24,7 @@ export default function QualitySection() {
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
                         {tests.map((test) => (
                             <div key={test} className="text-center">
-                                <div className="w-10 h-10 rounded-full bg-golden-light text-golden-primary flex items-center justify-center mx-auto mb-2 font-bold">
+                                <div className="w-10 h-10 rounded-full bg-golden-light text-primary flex items-center justify-center mx-auto mb-2 font-bold">
                                     ✓
                                 </div>
                                 <p className="text-sm font-medium text-foreground">

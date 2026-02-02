@@ -18,7 +18,7 @@ export default function AboutSection() {
                             practices and sustainable farming.
                         </p>
                         <div className="space-y-4 pt-4">
-                            <div className="border-l-4 border-golden-primary pl-4">
+                            <div className="border-l-4 border-primary pl-4">
                                 <h4 className="font-bold text-foreground mb-1">
                                     Our Mission
                                 </h4>
@@ -27,7 +27,7 @@ export default function AboutSection() {
                                     farmers through fair partnerships.
                                 </p>
                             </div>
-                            <div className="border-l-4 border-golden-secondary pl-4">
+                            <div className="border-l-4 border-primary pl-4">
                                 <h4 className="font-bold text-foreground mb-1">
                                     Our Vision
                                 </h4>

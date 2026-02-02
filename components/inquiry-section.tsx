@@ -204,7 +204,7 @@ export default function InquirySection() {
                             <Button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full h-11 bg-golden-primary hover:bg-golden-dark text-background font-semibold rounded-lg transition-all duration-300"
+                                className="w-full h-11 bg-primary hover:bg-secondary text-background font-semibold rounded-lg transition-all duration-300"
                             >
                                 {loading ? "Sending..." : "Send Inquiry"}
                             </Button>

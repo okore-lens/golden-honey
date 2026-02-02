@@ -19,10 +19,10 @@
     --card-foreground: #2d2416;
     --popover: #fffbf7;
     --popover-foreground: #2d2416;
-    --primary: #d4a574;
-    --primary-foreground: #fffbf7;
-    --secondary: #fff8f0;
-    --secondary-foreground: #2d2416;
+  --primary: #f4be1a;
+  --primary-foreground: oklch(0.96 0.01 70.08);
+  --secondary: oklch(0.75 0.12 65);
+  --secondary-foreground: oklch(0.15 0.02 40);
     --muted: #e8dcc8;
     --muted-foreground: #6b5d51;
     --accent: #d4a574;

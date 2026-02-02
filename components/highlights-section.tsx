@@ -57,10 +57,10 @@ export default function HighlightsSection() {
                         return (
                             <div
                                 key={highlight.title}
-                                className="group p-8 rounded-2xl bg-linear-to-br from-cream to-white hover:shadow-xl transition-all duration-300 border border-golden-light/20 hover:border-golden-primary/40"
+                                className="group p-8 rounded-2xl bg-linear-to-br from-cream to-white hover:shadow-xl transition-all duration-300 border border-primary/20 hover:border-golden-primary/40"
                             >
                                 <div className="mb-4">
-                                    <div className="w-12 h-12 rounded-lg bg-golden-light text-golden-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <div className="w-12 h-12 rounded-lg bg-golden-light text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
                                         <Icon size={24} />
                                     </div>
                                 </div>
